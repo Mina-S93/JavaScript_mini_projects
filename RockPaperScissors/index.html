@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockPaperScissors</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="startGame">
+        <h1>Rock Paper Scissors</h1>
+        <form action="" class="startForm">
+            <label for="name">To start the game please enter your name</label>
+            <p id="nameValidation"></p>
+            <input type="text" name="name" id="name"> <br>
+            <input type="submit" value="Start Game">
+        </form>
+    </div>
+
+    <header>
+        <h1>Rock Paper Scissors</h1>
+    </header>
+
+    <main>
+        <section class="computer-player">
+            <div class="computer">
+                <h2>Computer</h2>
+                <span>- you play first -</span>
+                <div class="container">
+                    <button class="rock">
+                        <i class="far fa-hand-rock"></i>
+                    </button>
+                    <button class="paper">
+                        <i class="far fa-hand-paper"></i>
+                    </button>
+                    <button class="scissors">
+                        <i class="far fa-hand-scissors"></i>
+                    </button>
+                    <div class="picked">
+                        <div class="anim">
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="player">
+                <h2 class="playerName"></h2>
+                <span>- pick your element -</span>
+                <div class="container">
+                    <button class="rock">
+                        <i class="far fa-hand-rock"></i>
+                    </button>
+                    <button class="paper">
+                        <i class="far fa-hand-paper"></i>
+                    </button>
+                    <button class="scissors">
+                        <i class="far fa-hand-scissors"></i>
+                    </button>
+                    <div class="picked"></div>
+                </div>
+            </div>
+        </section>
+        <section class="score">
+            <div class="score-container">
+                <p>Score</p>
+                <p class="computerScore"></p>
+            </div>
+            <div class="result display">
+                <p></p>
+                <button id="restart">Try again</button> <br>
+                <button id="restartGame">Restart Game</button>
+            </div>
+            <div class="score-container">
+                <p>Score</p>
+                <p class="playerScore"></p>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/32359a2293.js" crossorigin="anonymous"></script>
+</body>
+</html>

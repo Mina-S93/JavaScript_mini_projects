@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoneBook</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    
+    <style>
+        .filtered{
+            display: none !important;
+        }
+        
+        .delete {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container border border-primary text-center">
+        <i class="far fa-address-book fa-3x p-2"></i>
+        <h1>Phone Book</h1>
+    </div>
+
+    <div class="container border border-primary my-2">
+        <form id="searchForm">
+            <div class="row align-items-center justify-content-center py-2">
+                <div class="col-auto">
+                  <label for="search" class="col-form-label">Search your contacts: </label>
+                </div>
+                <div class="col-auto">
+                  <input type="text" id="search" name="search" class="form-control">
+                </div>
+                <div class="col-auto">
+                  <span class="form-text">
+                    You can search by name or by number.
+                  </span>
+                </div>
+              </div>
+        </form>
+    </div>
+
+    <div class="container border border-primary text-center">
+        <ul class="list-group list-group-flush w-50 p-3 m-auto">
+            <li class="list-group-item d-flex">
+                <div class="fw-bold flex-grow-1 text-start">Sebastian Gill</div>
+                <span class="text-muted mx-4">0491 570 156</span>
+                <i class="far fa-trash-alt delete align-self-center"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <div class="fw-bold flex-grow-1 text-start">Xavier McEwan</div>
+                <span class="text-muted mx-4">0971 570 157</span>
+                <i class="far fa-trash-alt delete align-self-center"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <div class="fw-bold flex-grow-1 text-start">Ethan Kane</div>
+                <span class="text-muted mx-4">0353 951 978</span>
+                <i class="far fa-trash-alt delete align-self-center"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <div class="fw-bold flex-grow-1 text-start">Louis Ramsay</div>
+                <span class="text-muted mx-4">0745 887 788</span>
+                <i class="far fa-trash-alt delete align-self-center"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <div class="fw-bold flex-grow-1 text-start">Michael Allen</div>
+                <span class="text-muted mx-4">0243 759 024</span>
+                <i class="far fa-trash-alt delete align-self-center"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <div class="fw-bold flex-grow-1 text-start">Koby Hughes</div>
+                <span class="text-muted mx-4">0267 140 062</span>
+                <i class="far fa-trash-alt delete align-self-center"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <div class="fw-bold flex-grow-1 text-start">Harley Samuel</div>
+                <span class="text-muted mx-4">0249 083 662</span>
+                <i class="far fa-trash-alt delete align-self-center"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <div class="fw-bold flex-grow-1 text-start">Owen Duncan</div>
+                <span class="text-muted mx-4">0892 787 052</span>
+                <i class="far fa-trash-alt delete align-self-center"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+                <div class="fw-bold flex-grow-1 text-start">Lincoln Otto</div>
+                <span class="text-muted mx-4">0561 391 386</span>
+                <i class="far fa-trash-alt delete align-self-center"></i>
+            </li>
+          </ul>
+    </div>
+
+    <div class="container border border-primary my-2">
+        <form id="addContact">
+    
+            <div class="row align-items-center justify-content-center py-2 ">
+                <div class="col-auto" >
+                  <span class="fw-bold">Add contact </span>
+                </div>
+            </div>
+
+            <div class="row align-items-center justify-content-center py-2 ">
+                <div class="col-auto d-flex flex-row">
+                    <label for="addName" class="col-form-label mx-2">Name:</label>
+                  <input type="text" id="addName" name="addName" class="form-control" required>
+                </div>
+                <div class="col-auto d-flex flex-row">
+                    <label for="addName" class="col-form-label mx-2">Number:</label>
+                    <input type="number" id="addNumber" name="addNumber" class="form-control" min="0" required>
+                </div>
+                <div class="col-auto">
+                    <input type="submit" class="form-control" value="Submit">
+                </div>
+                <span class="filtered w-25 form-text mx-2" id="numberValidation">Number must have between 9 and 12 characters!</span>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+    <script src="https://kit.fontawesome.com/32359a2293.js" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+h1{
+    margin-top: 3%;
+    color: darkblue;
+    font-size: 2.5em;
+}
+#bird{
+    font-size: 2em;
+    color: darkgoldenrod;
+}
+section{
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: floralwhite;
+    outline: 1px dashed black;
+    padding-top: 2%;
+}
+.pictures{
+    width: 90%;
+    height: 60vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+    border-right: 3px solid darkgoldenrod;
+    border-top: 3px solid darkblue;
+}
+.first,
+.second,
+.third,
+.fourth{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.first{
+    background-image: url('img/1200px-Eopsaltria_australis_-_Mogo_Campground.jpg');
+}
+.second{
+    background-image: url('img/tufted_titmouse._photo_deborah_bifulco_great_backyard_bird_count.jpg');
+}
+.third{
+    background-image: url('img/78996-istock-682216682.jpg');
+}
+.fourth{
+    background-image: url('img/home-slide-1-217-05-Western-Tanager-02-7a5f2f7a.jpeg');
+}
+.pictures h1{
+    color: floralwhite;
+    background-color: rgba(0, 0, 0, 0.856);
+    padding: 1%;
+    margin-bottom: 1%;
+    font-size: 1.5em;
+}
+#buttons{
+    margin: 2% 0%;
+    width: 100%;
+    text-align: center;
+}
+button{
+    margin: 0% 2%;
+    border: none;
+    background-color: floralwhite;
+}
+button i{
+    font-size: 2em;
+    color: darkgoldenrod;
+}
+button i:hover{
+    color: rgb(114, 84, 7);
+    cursor: pointer;
+}
+.none{
+    display: none;
+}

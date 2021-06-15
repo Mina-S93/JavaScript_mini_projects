@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif, Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(218, 188, 247);
+}
+
+h1{
+    margin: 10% 0 5% 0;
+    text-align: center;
+    color: rgb(250, 1, 55);
+}
+
+.cn{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.3em;
+}
+
+.cn p{
+    width: 20%;
+    border: 1px solid rgb(228, 115, 115);
+    padding: 3%;
+    border-radius: 5%;
+}
+
+.cn p span:first-child{
+    display: block;
+    margin-bottom: 5%;
+}
+
+
+.cn p span:last-child{
+    font-weight: bold;
+    color: rgb(250, 1, 55);
+}
+
+@media screen and (max-width:1000px){
+    .cn{
+        flex-direction: column;
+    }
+
+    .cn p{
+        margin: auto;
+        width: 80%;
+        margin-bottom: 5%;
+    }
+}
